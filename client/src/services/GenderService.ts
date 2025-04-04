@@ -38,4 +38,8 @@ const GenderService = {
   },
 };
 
+<<<<<<< HEAD
 export default GenderService;
+=======
+export default GenderService;
+>>>>>>> 424a71b (adjust)

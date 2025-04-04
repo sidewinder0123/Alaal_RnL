@@ -5,7 +5,11 @@ import AlertMessage from "../../AlertMessage";
 
 interface AddUserModalProps {
   showModal: boolean;
+<<<<<<< HEAD
   onRefreshUsers: (refresh: boolean) => void;
+=======
+  onRefreshUsers: (refresh:boolean) => void;
+>>>>>>> 424a71b (adjust)
   onClose: () => void;
 }
 
@@ -63,11 +67,20 @@ const AddUserModal = ({
               <AddUserForm
                 setSubmitForm={submitFormRef}
                 setLoadingStore={setLoadingStore}
+<<<<<<< HEAD
                 onUserAdded={(message) => {
                   handleShowAlertMessage(message, true, true);
                   setRefreshUsers(!refreshUsers);
                   onRefreshUsers(refreshUsers);
                 }}
+=======
+                onUserAdded={(message) =>{
+                  handleShowAlertMessage(message, true, true)
+                  setRefreshUsers(!refreshUsers);
+                  onRefreshUsers(refreshUsers);
+                }
+                }
+>>>>>>> 424a71b (adjust)
               />
             </div>
             <div className="modal-footer">

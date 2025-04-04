@@ -5,4 +5,8 @@ interface Genders {
   updated_at: string;
 }
 
+<<<<<<< HEAD
 export default Genders;
+=======
+export default Genders;
+>>>>>>> 424a71b (adjust)

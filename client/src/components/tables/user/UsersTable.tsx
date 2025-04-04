@@ -8,7 +8,11 @@ interface UsersTableProps {
   refreshUsers: boolean;
 }
 
+<<<<<<< HEAD
 const UsersTable = ({ refreshUsers }: UsersTableProps) => {
+=======
+const UsersTable = ({refreshUsers} : UsersTableProps) => {
+>>>>>>> 424a71b (adjust)
   const [state, setState] = useState({
     loadingUsers: true,
     users: [] as Users[],
@@ -24,7 +28,11 @@ const UsersTable = ({ refreshUsers }: UsersTableProps) => {
           }));
         } else {
           console.error(
+<<<<<<< HEAD
             "Unexpected status error while loading users: ",
+=======
+            "Unexpected status error while loading users",
+>>>>>>> 424a71b (adjust)
             res.status
           );
         }
@@ -40,9 +48,14 @@ const UsersTable = ({ refreshUsers }: UsersTableProps) => {
       });
   };
 
+<<<<<<< HEAD
   const handleUsersFullName = (user: Users) => {
     let fullName = "";
 
+=======
+  const handleUsersFullname = (user: Users) => {
+    let fullName = "";
+>>>>>>> 424a71b (adjust)
     if (user.middle_name) {
       fullName = `${user.last_name}, ${
         user.first_name
@@ -88,7 +101,11 @@ const UsersTable = ({ refreshUsers }: UsersTableProps) => {
             state.users.map((user, index) => (
               <tr className="align-middle" key={index}>
                 <td>{index + 1}</td>
+<<<<<<< HEAD
                 <td>{handleUsersFullName(user)}</td>
+=======
+                <td>{handleUsersFullname(user)}</td>
+>>>>>>> 424a71b (adjust)
                 <td>{user.gender.gender}</td>
                 <td>{user.birth_date}</td>
                 <td>{user.address}</td>

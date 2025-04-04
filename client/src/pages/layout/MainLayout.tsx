@@ -9,6 +9,10 @@ const MainLayout = ({ content }: MainLayoutProps) => {
     <>
       <div className="container-fluid">
         <Navbar />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 424a71b (adjust)
         <div>{content}</div>
       </div>
     </>

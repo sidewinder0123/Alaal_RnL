@@ -9,7 +9,11 @@ use Illuminate\Validation\Rule;
 
 class UserController extends Controller
 {
+<<<<<<< HEAD
     public function loadUsers()
+=======
+     public function loadUsers()
+>>>>>>> 424a71b (adjust)
     {
         $users = User::with(['gender'])
             ->where('tbl_users.is_deleted', false)
